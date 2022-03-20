@@ -26,7 +26,7 @@ $fonts: (
 }
 
 .main {
-  height: calc(100vh - 208px);
+  height: calc(100vh - 134px);
   display: flex;
 
   &__image {
@@ -92,7 +92,7 @@ $fonts: (
 }
 
 .footer {
-  height: 104px;
+  height: 30px;
 
   &__text {
     font-family: map-get($map: $fonts, $key: font-3);
@@ -102,6 +102,43 @@ $fonts: (
     line-height: 17px;
     text-align: center;
     color: #bdbdbd;
-    margin-top: 66px;
+  }
+}
+
+@media (max-width: 825px) {
+  * {
+    overflow: visible;
+  }
+
+  .main {
+    flex-direction: column;
+    height: 100%;
+
+    &__image {
+      width: 60%;
+      height: 100%;
+      margin: 0 auto;
+
+      &--img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+    }
+
+    &__textContainer {
+      width: 100%;
+      margin: 0;
+
+      &--title {
+        font-size: 48px;
+        line-height: 71px;
+      }
+
+      &--description {
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
   }
 }
