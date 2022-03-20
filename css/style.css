@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@700&family=Space+Mono:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nav {
+  height: 104px;
+}
+
+.nav__title {
+  font-size: 24px;
+  margin: 40px;
+  font-family: "Inconsolata";
+  font-weight: 700;
+  letter-spacing: -1px;
+  color: #333;
+}
+
+.main {
+  height: calc(100vh - 208px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__image {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main__image--img {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.main__textContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Space Mono";
+  margin: 0 119px;
+}
+
+.main__textContainer--title {
+  color: #333;
+  line-height: 95px;
+  font-size: 64px;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  margin: 32px;
+}
+
+.main__textContainer--description {
+  color: #4f4f4f;
+  line-height: 35px;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.035em;
+  margin: 32px;
+}
+
+.main__textContainer--button {
+  width: 216px;
+  height: 68px;
+  background: #333333;
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin: 32px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.main__textContainer--button:hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.footer {
+  height: 104px;
+}
+
+.footer__text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #bdbdbd;
+  margin-top: 66px;
+}
+/*# sourceMappingURL=style.css.map */
